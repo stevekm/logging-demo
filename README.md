@@ -6,7 +6,6 @@ This demo shows how to use the `logging` library in Python to give dynamic log f
 # Example
 ```
 $ ./app.py
-$ ./app.py
 [2017-07-29 00:33:01] (app:<module>:26:DEBUG) The app is starting...
 [2017-07-29 00:33:01] (app:<module>:27:DEBUG) Path to the app's log file: /data/scripts/log-test/logs/app.py.2017-07-29-00-33-01.log
 [2017-07-29 00:33:01] (submodule:<module>:10:DEBUG) loading submodule..
