@@ -6,8 +6,11 @@ This demo shows how to use the `logging` library in Python to give dynamic log f
 # Example
 ```
 $ ./app.py
-[2017-07-29 00:18:54] (app:<module>:25:DEBUG) The app is starting...
-[2017-07-29 00:18:54] (submodule:<module>:8:DEBUG) loading submodule..
+$ ./app.py
+[2017-07-29 00:33:01] (app:<module>:26:DEBUG) The app is starting...
+[2017-07-29 00:33:01] (app:<module>:27:DEBUG) Path to the app's log file: /data/scripts/log-test/logs/app.py.2017-07-29-00-33-01.log
+[2017-07-29 00:33:01] (submodule:<module>:10:DEBUG) loading submodule..
+[2017-07-29 00:33:01] (submodule:<module>:11:DEBUG) Path to the submodule's log file: /data/scripts/log-test/logs/app.py.2017-07-29-00-33-01.log
 ```
 
 # Files
