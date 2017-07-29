@@ -22,6 +22,8 @@ def logpath():
 
 config_yaml = os.path.join(scriptdir, 'logging.yml')
 logger = log.log_setup(config_yaml = config_yaml, logger_name = "app")
+
 logger.debug("The app is starting...")
+logger.debug("Path to the app's log file: {0}".format(log.logger_filepath(logger = logger, handler_name = "main")))
 
 import submodule

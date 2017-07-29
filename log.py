@@ -33,3 +33,15 @@ def log_setup(config_yaml, logger_name):
     logging.config.dictConfig(yaml.load(loggingConf))
     loggingConf.close()
     return(logging.getLogger(logger_name))
+
+def logger_filepath(logger, handler_name):
+    '''
+    Get the path to the filehander log file
+    '''
+    log_file = None
+    for h in logger.__dict__['handlers']:
+        if h.__class__.__name__ == 'FileHandler':
+            logname = h.get_name()
+            if handler_name == logname:
+                log_file = h.baseFilename
+    return(log_file)
